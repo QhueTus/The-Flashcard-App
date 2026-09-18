@@ -1,1 +1,702 @@
-[{"question": "why is the sky blue", "answer": " just cause ", "category": "gfhcffh", "correct": 0, "incorrect": 0}]
+[
+  {
+    "question": "What is the worst-case time complexity of QuickSort, and when does it occur?",
+    "answer": "O(n^2), occurring when the chosen pivot is consistently the smallest or largest element (e.g., partitioned sorted array with naive pivot selection).",
+    "category": "DSA",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the average time and auxiliary space complexity to insert an element into an AVL tree?",
+    "answer": "Time: O(log n), Space: O(log n) recursive stack (or O(1) iterative).",
+    "category": "TC/SC",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "Which data structure implements Dijkstra's algorithm to achieve O((V + E) log V) time complexity?",
+    "answer": "Min-priority queue (typically a binary min-heap or Fibonacci heap).",
+    "category": "DSA",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the auxiliary space complexity of standard in-place MergeSort on arrays vs. linked lists?",
+    "answer": "O(n) auxiliary space for arrays, O(log n) stack space (or O(1) auxiliary) for linked lists.",
+    "category": "TC/SC",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "How does a Trie achieve O(L) search time complexity, where L is key length?",
+    "answer": "By traversing nodes corresponding to consecutive characters of the key independently of the total number of stored keys N.",
+    "category": "DSA",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What constitutes an amortized O(1) time bound in dynamic array resizing?",
+    "answer": "Geometric expansion (e.g., doubling capacity) ensures costly O(n) reallocations happen infrequently enough that the cost per insertion averages to O(1).",
+    "category": "TC/SC",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the primary difference between Tarjan's and Kosaraju's algorithms?",
+    "answer": "Tarjan's finds Strongly Connected Components in one DFS pass using low-link values, while Kosaraju's requires two DFS passes and a graph transposition.",
+    "category": "DSA",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the time complexity of the Floyd-Warshall algorithm?",
+    "answer": "O(V^3) time complexity across all-pairs shortest paths using dynamic programming.",
+    "category": "TC/SC",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "In disjoint-set data structures (Union-Find), what time complexity does Path Compression + Union by Rank yield per operation?",
+    "answer": "O(alpha(n)), where alpha is the inverse Ackermann function (nearly constant time).",
+    "category": "DSA",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "Why is a Red-Black tree preferred over an AVL tree in write-heavy workloads?",
+    "answer": "Red-Black trees have looser balancing criteria, requiring at most 2 rotations per insertion and 3 per deletion compared to AVL's frequent rebalancing.",
+    "category": "DSA",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What are the three structural hazards that cause pipeline stalls in computer processors?",
+    "answer": "Structural hazards (resource conflicts), Data hazards (data dependencies like RAW/WAR/WAW), and Control hazards (branch/instruction flow changes).",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the difference between spatial locality and temporal locality?",
+    "answer": "Temporal locality refers to reusing data/instructions accessed recently; spatial locality refers to accessing memory addresses physically near recently accessed data.",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the function of a Translation Lookaside Buffer (TLB)?",
+    "answer": "A hardware cache of virtual-to-physical address translations used by the MMU to speed up virtual memory operations.",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "Explain Tomasulo's algorithm at a high architectural level.",
+    "answer": "A hardware dynamic scheduling algorithm enabling out-of-order execution by using reservation stations, register renaming, and a Common Data Bus (CDB).",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is cache coherence and what is a widely implemented invalidation-based snooping protocol?",
+    "answer": "Ensuring consistency across multiple private caches for shared memory addresses; the MESI protocol (Modified, Exclusive, Shared, Invalid).",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is Amdahl's Law formula for parallel speedup?",
+    "answer": "S(n) = 1 / ((1 - p) + (p / n)), where p is the parallel portion of the workload and n is the processor count.",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What distinguishes memory-mapped I/O from port-mapped (isolated) I/O?",
+    "answer": "Memory-mapped I/O uses the same address space and CPU instructions for memory and peripherals; port-mapped I/O uses dedicated address spaces and CPU instructions (e.g., IN/OUT).",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is branch target buffer (BTB) misprediction penalty?",
+    "answer": "The clock cycles wasted flushing speculative instructions out of the pipeline stages when a branch direction or target address is incorrectly predicted.",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the core operational difference between RISC and CISC architectures?",
+    "answer": "RISC emphasizes a small set of fixed-length, single-cycle instructions with load-store architecture; CISC emphasizes variable-length, multi-cycle instructions executing complex tasks directly in memory.",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "In superscalar architectures, what is register renaming designed to resolve?",
+    "answer": "False data dependencies: Anti-dependencies (Write-After-Read / WAR) and Output dependencies (Write-After-Write / WAW).",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "State the Master Theorem condition for T(n) = a*T(n/b) + f(n) when f(n) = Theta(n^(log_b(a))).",
+    "answer": "T(n) = Theta(n^(log_b(a)) * log n).",
+    "category": "Analysis",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the formal definition of Big-Omega notation (f(n) is in Omega(g(n)))?",
+    "answer": "There exist positive constants c and n_0 such that 0 <= c * g(n) <= f(n) for all n >= n_0.",
+    "category": "Analysis",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is Cook-Levin theorem's significance in computational complexity?",
+    "answer": "It proved that the Boolean Satisfiability Problem (SAT) is NP-complete, establishing the foundation of NP-completeness proofs via polynomial-time reductions.",
+    "category": "Analysis",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What separates the complexity classes P, NP, and NP-Complete?",
+    "answer": "P problems are solvable in deterministic polynomial time; NP problems have solutions verifiable in polynomial time; NP-Complete problems are in NP and every problem in NP reduces to them in polynomial time.",
+    "category": "Analysis",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "How does the Akra-Bazzi method generalize the Master Theorem?",
+    "answer": "It solves divide-and-conquer recurrences with unequal subproblem partition sizes, floor/ceiling perturbations, and non-polynomial non-homogeneous terms.",
+    "category": "Analysis",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is loop invariant analysis and what three conditions must be verified?",
+    "answer": "A formal correctness proof technique requiring verification of: 1. Initialization (base case), 2. Maintenance (inductive step), 3. Termination (correct state upon loop exit).",
+    "category": "Analysis",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "Why is comparison-based sorting bounded by Omega(n log n) lower bound?",
+    "answer": "A decision tree sorting n elements has n! leaves, requiring a minimum tree height of ceil(log2(n!)) = Omega(n log n) comparisons via Stirling's approximation.",
+    "category": "Analysis",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is dynamic programming's Principle of Optimality?",
+    "answer": "An optimal policy has the property that whatever the initial state and decision are, the remaining decisions must constitute an optimal policy with regard to the state resulting from the first decision.",
+    "category": "Analysis",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is an adversary argument in algorithmic lower bound analysis?",
+    "answer": "A technique where an adversarial input generator constructs worst-case scenarios dynamically in response to an algorithm's inquiries to prove a lower computational bound.",
+    "category": "Analysis",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What constitutes a fully polynomial-time approximation scheme (FPTAS)?",
+    "answer": "An algorithm that computes a (1 + epsilon)-approximation in time polynomial in both input size n and 1/epsilon.",
+    "category": "Analysis",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What are the dimensions of the Four Fundamental Subspaces of an m x n matrix A with rank r?",
+    "answer": "Col(A): r in R^m; Null(A): n - r in R^n; Row(A): r in R^n; Left Null(A): m - r in R^m.",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What does the Spectral Theorem guarantee for real symmetric matrices?",
+    "answer": "Any real symmetric matrix can be orthogonally diagonalized: A = Q * Lambda * Q^T, where Lambda contains real eigenvalues and Q consists of orthonormal eigenvectors.",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "How is Singular Value Decomposition (SVD) defined for an m x n matrix A?",
+    "answer": "A = U * Sigma * V^T, where U (m x m) and V (n x n) are orthogonal matrices, and Sigma (m x n) has non-negative real singular values in descending order.",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the geometric meaning of the determinant of an n x n matrix?",
+    "answer": "The oriented scaling factor by which the linear transformation scales n-dimensional volumes; negative determinants indicate orientation reversal.",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the Moore-Penrose pseudoinverse A^+ in terms of SVD?",
+    "answer": "A^+ = V * Sigma^+ * U^T, where Sigma^+ replaces non-zero singular values sigma_i with 1/sigma_i and transposes the diagonal matrix.",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What criteria establish that a real symmetric matrix A is positive definite?",
+    "answer": "All eigenvalues are strictly positive, x^T * A * x > 0 for all non-zero x, or all leading principal minors are strictly positive (Sylvester's criterion).",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "How does Principal Component Analysis (PCA) relate to the covariance matrix?",
+    "answer": "PCA computes the eigenvectors of the data covariance matrix; principal components are eigenvectors sorted descending by their corresponding eigenvalues.",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the condition number of a square matrix A and what does it measure?",
+    "answer": "kappa(A) = ||A|| * ||A^(-1)|| = sigma_max / sigma_min; it measures sensitivity/instability of the solution of Ax = b to perturbations or numerical errors.",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "Explain the Gram-Schmidt process output and numerical weakness.",
+    "answer": "It converts a linearly independent set into an orthonormal basis; classical Gram-Schmidt suffers from numerical instability via catastrophic loss of orthogonality due to floating-point rounding.",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the Rank-Nullity Theorem?",
+    "answer": "For any linear transformation T: V -> W where dim(V) = n, rank(T) + nullity(T) = n.",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What causes the vanishing gradient problem in deep networks using Sigmoid activations?",
+    "answer": "The derivative of Sigmoid peaks at 0.25; backpropagating through many layers multiplies these small fractions exponentially toward zero, halting weight updates.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "State the mathematical formula for Scaled Dot-Product Attention.",
+    "answer": "Attention(Q, K, V) = softmax((Q * K^T) / sqrt(d_k)) * V.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "How does Batch Normalization differ from Layer Normalization?",
+    "answer": "Batch Norm normalizes activations across the mini-batch dimension for each feature; Layer Norm normalizes across all features for each individual sample.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the primary role of residual skip connections in ResNets?",
+    "answer": "They provide identity shortcut paths that let gradients backpropagate directly without vanishing, enabling successful training of very deep networks.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the Bias-Variance tradeoff?",
+    "answer": "Total error = Bias^2 (underfitting due to erroneous assumptions) + Variance (overfitting due to sensitivity to training fluctuations) + Irreducible noise.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the loss function formulation for binary cross-entropy?",
+    "answer": "L = -[y * log(p) + (1 - y) * log(1 - p)], where y in {0, 1} is ground truth and p is predicted probability.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What makes the Adam optimizer different from standard SGD with momentum?",
+    "answer": "Adam combines exponential moving averages of both the past gradients (first moment / momentum) and past squared gradients (second moment / adaptive learning rates).",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the difference between L1 (Lasso) and L2 (Ridge) regularization?",
+    "answer": "L1 adds the sum of absolute weight values promoting sparse feature weights (exact zeros); L2 adds the sum of squared weights penalizing large weights smoothly.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "Why is teacher forcing used during RNN sequence generation training?",
+    "answer": "It supplies the ground-truth previous token as input at time t rather than the model's own predicted token, stabilizing and accelerating early training convergence.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the purpose of the reparameterization trick in Variational Autoencoders (VAEs)?",
+    "answer": "It allows backpropagation through stochastic nodes by expressing the latent variable as z = mu + sigma * epsilon, where epsilon ~ N(0, I) is external stochastic noise.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What are the ACID properties in database transaction processing?",
+    "answer": "Atomicity (all-or-nothing), Consistency (state transitions obey invariants), Isolation (concurrent executions behave sequentially), Durability (committed data survives crashes).",
+    "category": "Operating Systems & Databases",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What four Coffman conditions must hold simultaneously for a deadlock to occur?",
+    "answer": "1. Mutual Exclusion, 2. Hold and Wait, 3. No Preemption, 4. Circular Wait.",
+    "category": "Operating Systems & Databases",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "How does a B+ Tree differ from a standard B-Tree?",
+    "answer": "In a B+ Tree, internal nodes store only routing keys; all actual data/records are stored in leaf nodes, which are linked sequentially in a doubly linked list.",
+    "category": "DSA",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the three-way handshake used to establish a TCP connection?",
+    "answer": "Client sends SYN; Server responds with SYN-ACK; Client replies with ACK.",
+    "category": "Computer Networks",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the difference between preemptive and non-preemptive CPU scheduling?",
+    "answer": "Preemptive scheduling interrupts a running process to allocate CPU to another; non-preemptive lets a running process hold the CPU until it voluntarily terminates or blocks on I/O.",
+    "category": "Operating Systems & Databases",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is thrashing in virtual memory systems and what causes it?",
+    "answer": "A state where the OS spends significantly more time swapping pages in and out of secondary storage than executing instructions, caused by insufficient allocated physical frames.",
+    "category": "Operating Systems & Databases",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "Explain the difference between TCP and UDP transport protocols.",
+    "answer": "TCP is connection-oriented, reliable, ordered, byte-stream with flow/congestion control; UDP is connectionless, unreliable, unordered datagram-based with minimal overhead.",
+    "category": "Computer Networks",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is a race condition and what primitive guarantees mutual exclusion?",
+    "answer": "A bug where output depends on non-deterministic execution order of concurrent threads accessing shared memory; resolved via mutexes, semaphores, or atomic CAS instructions.",
+    "category": "Operating Systems & Databases",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is write-through vs. write-back cache policy?",
+    "answer": "Write-through updates main memory simultaneously on cache writes; write-back updates only the cache block and marks it dirty, writing to memory only upon eviction.",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the difference between process context switching and thread context switching?",
+    "answer": "Process switches require flushing/switching virtual memory page tables and TLB entries; thread switches within the same process share virtual address spaces, saving overhead.",
+    "category": "Operating Systems & Databases",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the difference between a mutex and a counting semaphore?",
+    "answer": "A mutex is a locking mechanism with ownership (only the acquiring thread can unlock); a semaphore is a signaling mechanism with an integer counter accessible across threads.",
+    "category": "Operating Systems & Databases",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the CAP theorem trade-off in distributed systems?",
+    "answer": "A distributed data store can guarantee at most two of three properties simultaneously: Consistency (all nodes see latest write), Availability (every non-failing request succeeds), and Partition tolerance.",
+    "category": "Distributed Systems",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the time complexity of building a Binary Heap of n elements?",
+    "answer": "O(n) time complexity using bottom-up sift-down construction (Floyd's algorithm), rather than O(n log n) by sequential insertion.",
+    "category": "TC/SC",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the optimal substructure property in dynamic programming?",
+    "answer": "An optimal solution to a problem contains within it optimal solutions to its subproblems.",
+    "category": "Analysis",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the worst-case time complexity of searching an element in a Hash Table with chaining?",
+    "answer": "O(n) when all keys hash to the exact same bucket, degenerating the bucket into a linear linked list.",
+    "category": "TC/SC",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the difference between inner product and outer product of two vectors u and v in R^n?",
+    "answer": "Inner product (u^T * v) yields a scalar; outer product (u * v^T) yields an n x n rank-1 matrix.",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the kernel trick in Support Vector Machines (SVMs)?",
+    "answer": "Computing inner products in a high-dimensional feature space using a kernel function K(x, z) = phi(x)^T * phi(z) without explicitly calculating the transformation phi.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the purpose of dropout during deep neural network training?",
+    "answer": "It randomly deactivates a fraction of neurons per forward pass to prevent co-adaptation of features, acting as an implicit ensemble regularization technique.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is Bellman-Ford's algorithm time complexity and main advantage over Dijkstra?",
+    "answer": "O(V * E); it handles negative edge weights correctly and detects negative cycles reachable from the source.",
+    "category": "DSA",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is instruction pipelining and what is pipeline throughput under ideal conditions?",
+    "answer": "Decomposing instruction processing into sequential overlapping hardware stages; ideal throughput is one completed instruction per clock cycle (CPI = 1).",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is a page fault in virtual memory systems?",
+    "answer": "A hardware interrupt generated when an executing program accesses a virtual page whose valid bit is zero (not mapped to a physical DRAM frame).",
+    "category": "Operating Systems & Databases",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is SIMD execution model?",
+    "answer": "Single Instruction Multiple Data: a parallel computing architecture where one instruction operates concurrently across multiple data vector registers.",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is an orthogonal matrix and what are its key properties?",
+    "answer": "A square matrix Q where Q^T * Q = Q * Q^T = I; its columns and rows are orthonormal, det(Q) = +-1, and it preserves Euclidean vector lengths and angles.",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the spatial complexity of Breadth-First Search (BFS) on an arbitrary graph?",
+    "answer": "O(V) auxiliary space to store visited markers and queue elements.",
+    "category": "TC/SC",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the difference between compile-time static linking and dynamic linking?",
+    "answer": "Static linking combines all library routines into a single standalone executable binary; dynamic linking leaves external references unresolved until program load/execution time.",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is gradient clipping in recurrent neural networks?",
+    "answer": "Rescaling the gradient vector if its L2-norm exceeds a threshold, preventing the exploding gradient problem during backpropagation through time.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the difference between strong consistency and eventual consistency?",
+    "answer": "Strong consistency guarantees any read returns the latest write; eventual consistency guarantees all replicas eventually converge if no new updates are made.",
+    "category": "Distributed Systems",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "How does A* search algorithm determine node expansion order?",
+    "answer": "By minimizing f(n) = g(n) + h(n), where g(n) is the exact cost from start to node n, and h(n) is an admissible heuristic estimate to the goal.",
+    "category": "DSA",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the space complexity of Depth-First Search (DFS) on a tree of maximum depth d?",
+    "answer": "O(d) auxiliary stack space.",
+    "category": "TC/SC",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the relationship between an eigenvalue and the nullspace of a matrix?",
+    "answer": "lambda is an eigenvalue of A if and only if the nullspace of (A - lambda * I) contains non-trivial (non-zero) vectors, representing the eigenspace.",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is a segmentation fault (SIGSEGV)?",
+    "answer": "A hardware-generated signal raised when a program attempts to access an unmapped virtual address or violates memory protection permissions (e.g., writing to read-only memory).",
+    "category": "Operating Systems & Databases",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is a false sharing problem in multi-threaded SMP architectures?",
+    "answer": "When independent threads on distinct cores modify independent variables residing on the same shared cache line, invalidating each other's caches redundantly.",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the mathematical condition for a heuristic h(n) to be consistent (monotonic)?",
+    "answer": "h(n) <= c(n, a, n') + h(n') for every node n and successor n' generated by action a, satisfying the triangle inequality.",
+    "category": "Analysis",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What distinguishes cross-entropy loss from mean squared error in classification?",
+    "answer": "Cross-entropy aligns with maximum likelihood estimation for categorical distributions and avoids vanishing gradients when output probabilities saturate away from targets.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the time complexity of the Knuth-Morris-Pratt (KMP) string search algorithm?",
+    "answer": "O(n + m) time, where n is text length and m is pattern length, using a preprocessed longest prefix-suffix (LPS) array.",
+    "category": "TC/SC",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the difference between a direct-mapped cache and a fully associative cache?",
+    "answer": "In direct-mapped, each memory address maps to exactly one cache block index; in fully associative, any block can reside in any cache line slot.",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the trace of a square matrix?",
+    "answer": "The sum of the diagonal elements, which is equal to the sum of its eigenvalues (including algebraic multiplicities).",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "Why are convolutional neural networks shift-invariant?",
+    "answer": "Weight sharing across sliding convolutional kernels combined with spatial pooling operations allows detecting features regardless of their exact spatial translation in inputs.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is an inverted index in search engines?",
+    "answer": "A database index mapping words/tokens directly to lists of document identifiers and positions containing those tokens.",
+    "category": "DSA",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the time complexity of finding the median in an unsorted array of size n using Quickselect?",
+    "answer": "O(n) average-case time, O(n^2) worst-case time (or guaranteed O(n) using Median of Medians).",
+    "category": "TC/SC",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is Two-Phase Locking (2PL) and what does it guarantee?",
+    "answer": "A concurrency control protocol with an expanding growing phase (locks acquired) and shrinking phase (locks released); guarantees serializability.",
+    "category": "Operating Systems & Databases",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the Frobenius norm of a matrix?",
+    "answer": "The square root of the sum of squared absolute values of its elements: ||A||_F = sqrt(sum(a_ij^2)) = sqrt(trace(A^T * A)).",
+    "category": "Linear Algebra",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is a Bloom Filter and what type of error can it produce?",
+    "answer": "A space-efficient probabilistic data structure used to test set membership; it can yield false positives but never false negatives.",
+    "category": "DSA",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is memory fragmentation and how do internal and external fragmentation differ?",
+    "answer": "Wasted memory; internal fragmentation is allocated space unused inside a fixed partition, while external fragmentation is free space split into small non-contiguous blocks.",
+    "category": "Operating Systems & Databases",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the purpose of positional encodings in Transformer models?",
+    "answer": "Transformers process all tokens simultaneously without recurrence or convolution; positional encodings inject token sequence order information into input embeddings.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the time complexity of Prim's algorithm using an adjacency matrix representation?",
+    "answer": "O(V^2) time complexity.",
+    "category": "TC/SC",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the difference between little-endian and big-endian byte ordering?",
+    "answer": "Little-endian stores the least significant byte (LSB) at the lowest memory address; big-endian stores the most significant byte (MSB) at the lowest address.",
+    "category": "Computer Architecture",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is a Markov Decision Process (MDP) tuple in reinforcement learning?",
+    "answer": "A 5-tuple: (S, A, P, R, gamma), denoting states, actions, transition probabilities, reward functions, and discount factor.",
+    "category": "ML/DL",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What constitutes a bipartite graph in graph theory?",
+    "answer": "A graph whose vertices can be partitioned into two disjoint sets U and V such that every edge connects a vertex in U to a vertex in V (contains no odd-length cycles).",
+    "category": "DSA",
+    "correct": 0,
+    "incorrect": 0
+  },
+  {
+    "question": "What is the primary difference between cooperative and preemptive multitasking?",
+    "answer": "Cooperative requires running processes to yield CPU control manually; preemptive uses hardware timer interrupts to force task switching automatically.",
+    "category": "Operating Systems & Databases",
+    "correct": 0,
+    "incorrect": 0
+  }
+]
