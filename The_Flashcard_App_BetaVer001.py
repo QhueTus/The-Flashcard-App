@@ -84,14 +84,20 @@ def quiz(flashcards):
         print("\nNo flashcards available for quizzing.")
         return
 
+    quiz_cards = flashcards
+
     category = input("Enter category for quiz or press Enter to quiz all: ").strip()
     if category:
-        flashcards = [card for card in flashcards if card['category'].lower() == category.lower()]
-        if not flashcards:
-            print(f"\nNo flashcards found for category: {category}")
-            return
-    
-    card = random.choice(flashcards)
+        quiz_cards = [
+            card for card in flashcards
+            if card.get("category", "").casefold() == category.casefold()
+        ]
+
+    if not quiz_cards:
+        print(f"\nNo flashcards found for category: {category}")
+        return
+
+    card = random.choice(quiz_cards)
     print(f"\nQ: {card['question']}")
     user_answer = input("Enter your answer: ")
 
